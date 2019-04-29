@@ -7,8 +7,8 @@ public class Main {
 	public static void main(String[] args) {
 
 		// Constants
-		final int SCREEN_WIDTH = 20; // Columns
-		final int SCREEN_HEIGHT = 10; // Rows
+		final int SCREEN_WIDTH = 100; // Columns
+		final int SCREEN_HEIGHT = 100; // Rows
 		final int SNAKE_STARTING_X = SCREEN_WIDTH / 2;
 		final int SNAKE_STARTING_Y = SCREEN_HEIGHT / 2;
 
@@ -32,7 +32,7 @@ public class Main {
 		// Init food
 		Food food = new Food('*');
 		food.addRandomFood(screen, food);
-		
+
 		// Input from player
 		Scanner scanner = new Scanner(System.in);
 		char input;
