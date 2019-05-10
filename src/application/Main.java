@@ -7,8 +7,8 @@ public class Main {
 	public static void main(String[] args) {
 
 		// Constants
-		final int SCREEN_WIDTH = 100; // Columns
-		final int SCREEN_HEIGHT = 100; // Rows
+		final int SCREEN_WIDTH = 50; // Columns
+		final int SCREEN_HEIGHT = 20; // Rows
 		final int SNAKE_STARTING_X = SCREEN_WIDTH / 2;
 		final int SNAKE_STARTING_Y = SCREEN_HEIGHT / 2;
 
@@ -43,6 +43,7 @@ public class Main {
 		while (isRunning) {
 			screen.PrintScreen();
 			// Get input from player and do something
+			
 			switch (input = scanner.nextLine().charAt(0)) {
 			case 'a':
 				snake.moveLeft(screen, snake);
